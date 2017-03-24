@@ -389,7 +389,7 @@ define(
           // Is not protocol prefixed
           if ((editor.settings.link_assume_external_targets && !/^\w+:/i.test(href)) ||
             (!editor.settings.link_assume_external_targets && /^\s*www[\.|\d\.]/i.test(href))) {
-			  if (editor.settings.link_auto_add_protocol) {
+              if (editor.settings.link_auto_add_protocol) {
                 href = 'http://' + href;                
                 insertLink();
               } else {

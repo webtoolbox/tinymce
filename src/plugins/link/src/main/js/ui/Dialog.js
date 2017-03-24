@@ -370,7 +370,7 @@ define(
           }
 
           // Is email and not //user@domain.com
-          if (href.indexOf('@') > 0 && href.indexOf('//') == -1 && href.indexOf('mailto:') == -1) {
+          if (editor.settings.show_mailto_add_dialog && href.indexOf('@') > 0 && href.indexOf('//') == -1 && href.indexOf('mailto:') == -1) {
             delayedConfirm(
               editor,
               'The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?',
